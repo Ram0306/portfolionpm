@@ -1,0 +1,437 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+  
+}
+/**--------- project page css----------**/
+.pro{
+    background-color:white;
+}
+
+
+
+html{
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Arial',sans-serif ;
+    box-sizing: inherit;
+    background-color:black;
+    color:#fff;
+    min-height: 100vh;
+}
+#header{
+    
+    width:100%;
+    height:100vh;
+   /** background-image:url(image/ram\ image.jpg);   **/
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:black;
+    color:white;
+    height:17vh;
+}
+nav .mainMenu{
+    margin-right: 1rem;
+    display: flex;
+    list-style: none;
+}
+nav .mainMenu li a{
+    line-height: 4rem;
+    display: inline-block;
+    padding:15px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight:bold;
+}
+nav .mainMenu li a:hover{
+    color: rgb(228, 169, 9);
+    border-radius: 20rem;
+}
+nav .openMenu{
+    font-size:2rem;
+    margin:20px;
+    display:none;
+    cursor: pointer;
+   
+}
+
+nav .mainMenu .closeMenu , .icons i{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-facebook:hover{ color: rgb(0, 110, 255);}
+.fa-instagram:hover{ color: rgb(255, 0, 149);}
+.fa-twitter:hover{ color: rgb(0, 213, 255);}
+
+nav .logo{
+    line-height: 5rem;
+    margin:10px 2rem;
+    font-size: 25px;
+    cursor: pointer;
+    color: #ff004f;
+}
+
+
+
+.image-4{
+    margin-top: 2rem;
+    border-radius: 100%;
+    float: left;
+    width: 16rem;
+    height: 17rem;
+  
+}
+
+.header-text{
+   margin-top: 3rem;
+   position:relative;
+   width: 88%;
+   left: 2%;
+  
+
+}
+.header-text p{
+    margin-top: 1rem;
+    font-size:1.2rem;
+}
+.header-text h1{
+     font-size:2rem;   /* Hi im ram from india */
+    margin-top:1.7rem ;
+    display: fixed;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+
+.circle{
+    display: flex;
+    gap: 2rem;
+    margin-top:2%;
+    margin-left: 25%;
+    margin-bottom: 5%;
+    position: relative;
+
+}
+.homecard-1{
+    background-color:#a0a0ac;
+    border-radius: 50%;
+    width: 140px;
+    height: 150px;
+    border: 1px solid #9e9c9c;
+    color:#fff;
+    padding:3.8rem;
+    cursor: pointer;  
+}
+.homecard-1 a{
+    text-decoration-line: none;
+}
+.homecard-1 span{
+    color:#161515;
+    margin-left: -2.66rem;
+    font-weight: 600;
+    font-size: 24px;
+    
+   
+}
+
+
+.resume {
+    
+    background-color: #eea204; /* Color for Resume */
+  }
+  
+.project {
+    background-color: #81d8da;; /* Color for Project */ 
+    
+}
+  
+.contact {
+    background-color: greenyellow; /* Color for Contact */
+  }
+ /* Footer Styles */
+/* Base styles for the footer */
+footer {
+   
+    top:80%;
+    position: absolute;
+    background-color:black;
+    color: #fff;
+    text-align: center;
+    padding:1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    border-top: 1px solid #f0e7e7; /* Add a border to each project */
+    
+    
+}
+footer .ram{
+    margin-top: 7rem;
+    margin-right: 37rem;
+    text-align: center;
+    align-items: center;
+     font-size:1rem;
+     position: sticky;
+    
+}
+footer .email{
+    margin-left: 3rem;
+}
+footer .email a{
+    margin-right: 14rem;
+    font-size:1.4rem
+
+}
+
+footer .Followme{
+    padding:1rem;
+    align-items: flex-start;
+    margin-left: -12rem;
+    font-size:1rem
+    
+}
+footer .Followme a{
+     font-size:1.5rem;
+    margin-right:1rem;
+    background-color:#333
+    
+}
+
+/* Footer Links Styles */
+footer a {
+    
+    color: #fff; /* Link text color */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+/* Change link color on hover */
+footer a:hover {
+    color: #f8f8f8; /* Hover color */
+}
+
+
+
+#about{
+    padding: rem 0;
+    color:#B3E5FC;
+
+}
+ 
+.row{
+    width:100%;
+    margin-left:-11rem;
+    display: flex; /* Display columns in a row */
+    flex-wrap: wrap; /* Wrap columns to the next line on smaller screens */
+    justify-content: space-between;
+}
+.about-col-1{
+    flex: 1; /* Make the left column flexible */
+    text-align: center; /* Center align column content */
+}
+
+ img {
+    border-radius:10%;
+        width: 14rem;
+        height:100%; 
+        margin-top:6rem;
+        
+       }
+
+    
+
+.about-col-2 {
+    flex: 1;
+    margin: 3rem; /* Add spacing around the right column */
+    width: 50%; /* Adjust the width as needed */
+    margin-right: 8rem; 
+    position: relative;
+}
+
+
+.sub-title{               /* about me */
+    font-size: 2rem;
+    font-weight: 600;
+    color:#fff
+}
+.tab-title{
+    position:relative;
+    display: flex;
+    margin: 2rem 0 4rem;
+  
+}
+.tab-link{
+    margin-right: 5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    position:relative;
+}
+.tab-link::after{
+    content:'';
+    width:0;
+    height:.3rem;
+    background: #ff004f;
+    position:absolute;
+    left:0;
+    bottom: -.8rem;
+    transition:0.5s;
+}
+.tab-link.active-link::after{
+    width:50%;
+
+}
+.tab-contents ul li span{
+    color:#ff004f;
+    font-size: 1.4rem;
+    max-width: 50rem;
+    margin: 10rem auto;
+
+}
+.tab-contents{
+    display: none;     /** hide all tab-content **/
+}
+
+.tab-contents.active-tab#skills{     /** show only skills not all not all tab-contnet **/
+    display:block;
+}
+.tab-contents.active-tab#experience{     /** show only skills not all not all tag contnet **/
+    display:block;
+}
+.tab-contents.active-tab#education{     /** show only skills not all not all tag contnet **/
+    display:block;
+}
+/* -------contact---------- */
+.containerC {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Adjust this property as needed */
+  }
+
+.sub-title1{
+    font-size: 2.3rem;
+    font-weight: 600;
+    color:#fff;
+    margin-top: 2rem;
+}
+.contact-left{
+   margin-left: 6rem;
+    margin-top: 2rem;
+
+}
+
+.contact-left p{
+    margin-top: 4rem;
+    font-size: 1.4rem;
+
+}
+.contact-left p i{
+    color:#ff004f;
+    margin-right: .6rem;
+    font-size: 2.5rem;
+}
+.social-icons {
+    margin-top:3rem;
+}
+
+.social-icons a {
+    text-decoration:none;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color:#2136f8;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color:#ff004f;
+    transform: translate(-.5rem);
+}
+.btn.btn2{
+    text-decoration: none;
+    display:inline-block;
+    background-color:#ff004f;
+    font-size: 1.1rem;
+    margin: 1rem;
+    padding: 0.6rem;
+    border-radius: .8rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+/* ---------Form----------- */
+
+.contact-right{
+    margin-top:2rem;
+    margin-right:7rem;
+}
+.contact-right form{
+    width:30rem;           /* form box yourname your mail u can change the size*/
+}
+form input, form textarea{
+    display:flex;
+    width:100%;
+    border:1;
+    outline:none;
+    background:#262626;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    color:#fff;
+    font-size:1rem;     
+    border-radius: .6rem;
+}
+ nav i.fa-solid {    /*  hide cros bar menu bar  */
+    display:none;
+}
+             /* project css    */
+
+             .projects {
+               
+                margin-bottom: -2rem;
+                display: flex;
+                background-color: black;
+                flex-direction: column; /* Display projects vertically */
+                padding: 0px; /* Add padding for spacing */
+                height: 800px; /* Set a maximum height for the container */
+                overflow-y: auto; /* Enable vertical scrolling when content overflows */
+              }
+              h2{
+                color: #ff004f;
+              }
+              
+              .pro1,
+              .pro2,
+              .pro3, 
+              .pro4{
+                line-height:1.7rem;
+                border-top: 1px solid #f0e7e7; /* Add a border to each project */
+                padding: 40px; /* Add padding for spacing */
+              }
+              
+              .img-1,
+              .img-2,
+              .img-3,
+              .img-4 {
+                  float:right;
+                  height: 100%;
+                max-width: 100%; /* Ensure images don't exceed their container */
+                display: block;
+                margin: 0 auto; /* Center the images horizontally */
+              }
+              
+              .p {
+                margin: 0; /* Remove default margin for <p> elements */
+              }
+              

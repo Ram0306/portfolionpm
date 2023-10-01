@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal PortFolio</title>
+    <link rel="stylesheet" href="/static/css/style.css"> 
+    <link rel="stylesheet" href="/static/css/mediastyle.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ 
+ 
+    <div id="header">
+        <div class="container">
+           {{> navbar}}
+            {{> about }}
+        </div>
+           
+           {{> footer}}
+    </div>
+     
+        <!------------About  ------------      -->
+             
+
+        
+          <script>
+             var tablinks = document.getElementsByClassName("tab-link");
+             var tabcontents = document.getElementsByClassName("tab-contents");
+             function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");   //active link means red line below the name is not active after this//
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+  
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+
+             }
+     </script>
+     
+      <script>
+     const mainMenu = document.querySelector('.mainMenu');
+     const closeMenu = document.querySelector('.closeMenu');
+     const openMenu = document.querySelector('.openMenu');
+
+     openMenu.addEventListener('click', open);
+     closeMenu.addEventListener('click',close);
+
+     function open(){
+        mainMenu.style.display = "flex";
+        mainMenu.style.top = '0';
+     }
+     function close(){
+        mainMenu.style.top='-200%';
+     }
+
+     </script>
+</body>
+</html>
