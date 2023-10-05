@@ -3,10 +3,10 @@ const app = express();  // express function call
 const hbs = require("hbs")
 
 // db connection
-
+require("./src/db/conn");
 
 // Routes
-const routes =require("../src/routes/main") //file import routes come from main.js file
+const routes =require("./src/routes/main") //file import routes come from main.js file
 app.use("/",routes);
  //connect public folder css images etc..
 app.use('/static',express.static("public"))
